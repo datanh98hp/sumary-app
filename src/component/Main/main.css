@@ -36,10 +36,11 @@
    }
 
    .main-right {
-       
+       /* border-left: 1px solid rgba(26, 24, 24, 0.658); */
    }
    
 }
+
 @media only screen and (min-width: 645px) {
    .main {
        display: flex;
@@ -51,9 +52,7 @@
        display: contents;
    }
    .main-left {
-       
         border-right: 2px solid rgba(71, 70, 70, 0.288);
-        border-radius: 2%;
         align-items: center;
         align-content: center;
         justify-items: center;
@@ -72,12 +71,12 @@
        margin-left: 3px;
    }
    .main-left p{
-        display: none;
-       
+        display: block;
    }
    /* main middle */
    .main-middle {
-      min-height: max-content;
+     max-width: 100%;
+     justify-content: center;
    }
 
 
@@ -90,56 +89,59 @@
 
 @media only screen and (min-width: 900px) {
     .main {
-    display: block;
-    flex-direction: row;
-    background-color: burlywood;
+        display:block;
+        background-color: rgba(255, 255, 255);
+        overflow-y: scroll;
    }
    .desktop {
-      display: flex;
-      background-color: rgb(240, 140, 10);
+        display: flex;  
    }
    .mb {
       display: none;
    }
   
    .main-left {
-       background-color: rgb(255, 255, 255);
-       /* text-align: center; */
-       max-width: max-content;
+       /* background-color: rgb(219, 23, 23); */
+       display: block;
    }
+    .groups-list {
+        
+    }
    .list-category {
-        display: flex;
-        flex-direction:column ;
-        justify-content: space-between;
         /* border: 1px solid rgb(211, 206, 206); */
-        padding: 20px;
-
+        
    }
    .item-category {
-        max-width: max-content;
-        /* display:inline-flex; */
-        flex-direction: column;
-        justify-content: center; 
-        align-items: center;
-        padding: 1em;
-        border-radius: 50%;
+        max-width: 100%;
+        /* align-items: flex-end; */
+        border-radius: 10%;
    }
    .item-category:hover {
-        background-color: rgba(137, 141, 141, 0.062);
-        border-bottom: 2px solid rgba(68, 66, 66, 0.466);
-        border-left: 2px solid rgba(46, 45, 45, 0.466);
+        background-color: rgba(137, 141, 141, 0.199);
        
    }
-   .item-category span {
-        display: none;
+   .item-category p {
+       margin-left: 5px;
    }
    .main-middle {
        /* border: 1px solid black; */
-       margin: 0px 5px 0px 5px;
+       background-color: rgb(255, 255, 255);
+        align-items: center;
+        display: flex;
+        justify-content: center;
+   }
+   .content {
+       width: 100%t;
+      display: block;
+      /* padding: 15px; */
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.082);
+      margin-top:5 px;
+      justify-content: space-around;
+      overflow-y: auto;
    }
    .main-right  {
-       background-color: burlywood;
-
+       background-color: rgb(255, 255, 255);
    }
 
 }

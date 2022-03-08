@@ -5,7 +5,7 @@ export default function Main() {
     return (
         <main className='main'>
             <div className='desktop'>
-                <div className='main-left col-3'>
+                <div className='main-left col-2'>
                     <div className='groups-list'>
                         <ul className='list-category'>
                             <li className='item-category'>
@@ -24,13 +24,17 @@ export default function Main() {
                     </div>
                 </div>
                 <div className='main-middle col-8'>
-                    <Card />
+                   <div className='content'>
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                   </div>
                 </div>
-                <div className='main-right col-3'>
-                    C
+                <div className='main-right col-2'>
+                    Right
                 </div>
             </div>
-
 
             {/* Mobile -tablet */}
             <div className='mb'>
@@ -58,7 +62,7 @@ export default function Main() {
                 <div className='main-middle col-s-9'>
                     <Card />
                 </div>
-                <div className='main-right col-s-1'>
+                <div className='main-right col-s-2'>
                     <p>jd</p>
                     <p>Right</p>
                     <p>jd</p>
