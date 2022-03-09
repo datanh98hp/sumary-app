@@ -1,147 +1,98 @@
-
-@media only screen and (min-width: 100px) {
+@media only screen and (max-width: 620px){
     .desktop {
       display: none;
    }
    .mb {
        display: block;
-       flex-direction: row;
-       justify-content: space-between;
    }
    .main {
-       display: flex;
-       flex-direction: row;
-       justify-content: center;
-   }
-    .mb {
-       display: flex;
-       flex-direction: column;
+       background-color: rgb(255, 255, 255);
+       display: block;
    }
    .main-left {
-       display: contents;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(114, 111, 111, 0.671);
    }
     .list-category {
         display: flex;
-        flex-direction:row ;
-        justify-content: space-between;
-        padding: 10px;
+        justify-content: center;
    }
    .item-category {
-       display: flex;
-       flex-direction: row;
-       padding: 15px;
+       padding: 1.2rem;
    }
    .item-category span {
        display:none;
    }
-
-   .main-right {
-       /* border-left: 1px solid rgba(26, 24, 24, 0.658); */
-   }
-   
-}
-
-@media only screen and (min-width: 645px) {
-   .main {
-       display: flex;
-   }
-   .desktop {
-       display: none;
-   }
-   .mb{
-       display: contents;
-   }
-   .main-left {
-        border-right: 2px solid rgba(71, 70, 70, 0.288);
-        align-items: center;
-        align-content: center;
-        justify-items: center;
-   }
-   .list-category {
-       display: flex;
-       flex-direction: column;
-
-   }
-   .item-category {
-       display: flex;
-       flex-direction: row;
-       padding: 20px;
-   }
-   .item-category span{
-       margin-left: 3px;
-   }
-   .main-left p{
-        display: block;
-   }
-   /* main middle */
    .main-middle {
-     max-width: 100%;
-     justify-content: center;
+       /* border-left: 1px solid rgba(158, 39, 39, 0.658); */
+       /* border: 1px solid black; */
    }
-
-
-   /* main right */
+   /*  */
+   .content {
+       padding: 20px;
+    
+   }
    .main-right {
-      display: block;
-      float: right;
+       border-left: 1px solid rgba(26, 24, 24, 0.658);
+       background-color: cadetblue;
    }
 }
-
-@media only screen and (min-width: 900px) {
+/* tablet */
+@media only screen and (max-width: 920px) {
+    
     .main {
-        display:block;
-        background-color: rgba(255, 255, 255);
-        overflow-y: scroll;
-   }
-   .desktop {
-        display: flex;  
-   }
-   .mb {
+       background-color: rgb(255, 255, 255);
+       justify-content: space-evenly;
+   }.desktop {
       display: none;
    }
-  
+   .mb {
+       display: flex;
+       flex-direction: row;
+       /* justify-content: space-evenly; */
+   }
    .main-left {
-       /* background-color: rgb(219, 23, 23); */
-       display: block;
-   }
-    .groups-list {
         
-    }
-   .list-category {
-        /* border: 1px solid rgb(211, 206, 206); */
-        
+        /* background-color: rgba(114, 111, 111, 0.671); */
    }
-   .item-category {
-        max-width: 100%;
-        /* align-items: flex-end; */
-        border-radius: 10%;
-   }
-   .item-category:hover {
-        background-color: rgba(137, 141, 141, 0.199);
-       
-   }
-   .item-category p {
-       margin-left: 5px;
-   }
-   .main-middle {
-       /* border: 1px solid black; */
-       background-color: rgb(255, 255, 255);
-        align-items: center;
+    .list-category {
         display: flex;
+        flex-direction: column;
         justify-content: center;
    }
-   .content {
-       width: 100%t;
-      display: block;
-      /* padding: 15px; */
-      border-radius: 10px;
-      border: 1px solid rgba(0, 0, 0, 0.082);
-      margin-top:5 px;
-      justify-content: space-around;
-      overflow-y: auto;
+   .item-category {
+       /* background-color: burlywood; */
+       padding: 1.2rem;
+       display: flex;
+       flex-direction: row;
+       border-radius: 10px;
+       border: bottom 2px solid rgba(0, 0, 0, 0.041) ;
    }
-   .main-right  {
-       background-color: rgb(255, 255, 255);
+   .item-category:hover {
+        /* background-color: rgba(116, 110, 110, 0.041); */
+        border-bottom: 3px solid rgb(87, 76, 233);
+   }
+   .item-category span {
+       /* display:none; */
+       margin-left: 10px;
+   }
+   .main-middle {
+       border-left: 1px solid rgba(158, 39, 39, 0.658);
+       /* border: 1px solid black; */
+        
+   }
+   /*  */
+   .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;   
    }
 
-}
+   .main-right {
+      
+       border-left: 1px solid rgba(26, 24, 24, 0.658);
+       background-color: cadetblue;
+   }
+}   
