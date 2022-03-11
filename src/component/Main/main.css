@@ -152,6 +152,11 @@
        background-color: rgb(255, 255, 255);
    }
    .main-left {
+       z-index: 1;
+       position: sticky;
+       top: auto;
+       right: auto;
+       left: 0;
         width: 30%;
        border-left: 1px solid rgba(26, 24, 24, 0.658);
        background-color: rgb(255, 255, 255);
@@ -174,7 +179,7 @@
 
    }
    .item-category:hover {
-    background-color: rgba(58, 58, 58, 0.247);
+        background-color: rgba(58, 58, 58, 0.247);
    }
    .item-category p {
        margin-left: 10px;
@@ -186,12 +191,12 @@
    /*  */
 
    .content {
-        padding: 30px;
-        margin-left: 40px;
-        margin-right: 40px;
+        padding: 60px;
     }
     .item-post {
-        margin-bottom: 40px;
+        margin-left: 28px;
+        margin-right: 28px;
+        margin-bottom: 20px;
     }
     .main-right {
        width: 30%;
