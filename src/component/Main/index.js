@@ -5,7 +5,7 @@ export default function Main() {
     return (
         <main className='main'>
             <div className='desktop'>
-                <div className='main-left col-2'>
+                <div className='main-left'>
                     <div className='groups-list'>
                         <ul className='list-category'>
                             <li className='item-category'>
@@ -23,22 +23,27 @@ export default function Main() {
                         </ul>
                     </div>
                 </div>
-                <div className='main-middle col-8'>
+                <div className='main-middle'>
                    <div className='content'>
+                    <div className='item-post'>
                         <Card />
+                    </div>
+                    <div className='item-post'>
                         <Card />
-                        <Card />
-                        <Card />
+                    </div>
                    </div>
                 </div>
-                <div className='main-right col-2'>
+                <div className='main-right'>
                     Right
                 </div>
             </div>
 
             {/* Mobile -tablet */}
             <div className='mb'>
-                <div className='main-left col-s-2'>
+                <div className='main-left'>
+                    
+                </div>
+                <div className='main-middle'>
                     <div className='groups-list'>
                         <ul className='list-category'>
                             <li className='item-category'>
@@ -53,16 +58,14 @@ export default function Main() {
                             <li className='item-category'>
                                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" /></svg><span>Top Top</span>
                             </li>
-            
+
                         </ul>
                     </div>
-                </div>
-                <div className='main-middle col-s-8'>
                     <div className='content'>
                         <Card />
                     </div>
                 </div>
-                <div className='main-right col-s-2'>
+                <div className='main-right'>
                    
                     <p>Right</p>
                    

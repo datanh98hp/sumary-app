@@ -14,9 +14,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+/* For mobile phones: */
+/* @media only screen and (max-width: 768px) {
+  
+  [class*="col-"] {
+    width: 100%;
+  }
+} */
 /* desktop */
-@media only screen and (min-width: 900px) {
+/* @media only screen and (min-width: 900px) {
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -29,10 +35,10 @@ code {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-}
+} */
 
 
-@media only screen and (min-width: 645px) {
+/* @media only screen and (min-width: 645px) {
   .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
   .col-s-3 {width: 25%;}
@@ -45,7 +51,7 @@ code {
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
-}
+} */
 
 @tailwind base;
 @tailwind components;
